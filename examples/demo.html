@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Force Grid Template for Bootstrap</title>
+    <!-- Bootstrap with force-grid CSS -->
+    <link href="../css/bootstrap-force-grid.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="grid.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="page-header">
+            <h1>Force Grid Examples</h1>
+            <p class="lead">Add-in for Bootstrap grid system. It allows the use of class to force a view port by element.</p>
+        </div>
+        <div>
+            <div>
+                <h2>Default Grid <small>This will change when browser is resized.</small></h2>
+                <h4>Combination</h4>
+                <div class="row">
+                    <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">.col-xs-2 .col-sm-4 .col-md-6 .col-lg-8</div>
+                    <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">.col-xs-10 .col-sm-8 .col-md-6 .col-lg-4</div>
+                </div>
+                <h4>Offset</h4>
+                <div class="row">
+                    <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">.col-xs-2 .col-sm-4 .col-md-6 .col-lg-8</div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-8 col-sm-offset-6 col-md-offset-4 col-lg-offset-2">.col-xs-10 .col-sm-8 .col-md-6 .col-lg-4 .col-xs-offset-8 .col-sm-offset-6 .col-md-offset-4 .col-lg-offset-2</div>
+                </div>
+            </div>
+            <h1>Force Grid Demo <small>Fixed to specified view port even if browser is resized.</small></h1>
+            <div class="view-lg">
+                <h2>view-lg <small>Large view-port</small></h2>
+                <h4>Even width</h4>
+                <div class="row">
+                    <div class="col-xs-4">.col-xs-4</div>
+                    <div class="col-sm-4">.col-sm-4</div>
+                    <div class="col-md-4">.col-md-4</div>
+                </div>
+                <h4>Full width</h4>
+                <div class="row">
+                    <div class="col-lg-12">.col-lg-12</div>
+                </div>
+                <h4>Combination</h4>
+                <div class="row">
+                    <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">.col-xs-2 .col-sm-4 .col-md-6 .col-lg-8</div>
+                    <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">.col-xs-10 .col-sm-8 .col-md-6 .col-lg-4</div>
+                </div>
+                <h4>Offset</h4>
+                <div class="row">
+                    <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">.col-xs-2 .col-sm-4 .col-md-6 .col-lg-8</div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-8 col-sm-offset-6 col-md-offset-4 col-lg-offset-2">.col-xs-10 .col-sm-8 .col-md-6 .col-lg-4 .col-xs-offset-8 .col-sm-offset-6 .col-md-offset-4 .col-lg-offset-2</div>
+                </div>
+                <h4>Column Ordering</h4>
+                <div class="row">
+                    <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+                    <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+                </div>
+            </div>
+            <div class="view-md">
+                <h2>view-md <small>Medium view-port</small></h2>
+                <h4>Even width</h4>
+                <div class="row">
+                    <div class="col-xs-4">.col-xs-4</div>
+                    <div class="col-sm-4">.col-sm-4</div>
+                    <div class="col-md-4">.col-md-4</div>
+                </div>
+                <h4>Full width</h4>
+                <div class="row">
+                    <div class="col-lg-4">.col-lg-4</div>
+                    <div class="col-lg-8">.col-lg-8</div>
+                </div>
+                <h4>Combination</h4>
+                <div class="row">
+                    <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">.col-xs-2 .col-sm-4 .col-md-6 .col-lg-8</div>
+                    <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">.col-xs-10 .col-sm-8 .col-md-6 .col-lg-4</div>
+                </div>
+                <h4>Offset</h4>
+                <div class="row">
+                    <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">.col-xs-2 .col-sm-4 .col-md-6 .col-lg-8</div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-8 col-sm-offset-6 col-md-offset-4 col-lg-offset-2">.col-xs-10 .col-sm-8 .col-md-6 .col-lg-4 .col-xs-offset-8 .col-sm-offset-6 .col-md-offset-4 .col-lg-offset-2</div>
+                </div>
+            </div>
+            <div class="view-sm">
+                <h2>view-sm <small>Small view-port</small></h2>
+                <h4>Even width</h4>
+                <div class="row">
+                    <div class="col-xs-4">.col-xs-4</div>
+                    <div class="col-sm-4">.col-sm-4</div>
+                    <div class="col-md-4">.col-sm-4</div>
+                </div>
+                <h4>Full width</h4>
+                <div class="row">
+                    <div class="col-lg-4">.col-lg-4</div>
+                    <div class="col-md-8">.col-md-8</div>
+                </div>
+                <h4>Combination</h4>
+                <div class="row">
+                    <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">.col-xs-2 .col-sm-4 .col-md-6 .col-lg-8</div>
+                    <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">.col-xs-10 .col-sm-8 .col-md-6 .col-lg-4</div>
+                </div>
+                <h4>Offset</h4>
+                <div class="row">
+                    <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">.col-xs-2 .col-sm-4 .col-md-6 .col-lg-8</div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-8 col-sm-offset-6 col-md-offset-4 col-lg-offset-2">.col-xs-10 .col-sm-8 .col-md-6 .col-lg-4 .col-xs-offset-8 .col-sm-offset-6 .col-md-offset-4 .col-lg-offset-2</div>
+                </div>
+            </div>
+            <div class="view-xs">
+                <h2>view-xs <small>Extra small view-port</small></h2>
+                <h4>Even width</h4>
+                <div class="row">
+                    <div class="col-xs-4">.col-xs-4</div>
+                    <div class="col-xs-4">.col-xs-4</div>
+                    <div class="col-xs-4">.col-xs-4</div>
+                </div>
+                <h4>Full width</h4>
+                <div class="row">
+                    <div class="col-lg-4">.col-lg-4</div>
+                    <div class="col-md-4">.col-md-4</div>
+                    <div class="col-sm-4">.col-sm-4</div>
+                </div>
+                <h4>Combination</h4>
+                <div class="row">
+                    <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">.col-xs-2 .col-sm-4 .col-md-6 .col-lg-8</div>
+                    <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">.col-xs-10 .col-sm-8 .col-md-6 .col-lg-4</div>
+                </div>
+                <h4>Offset</h4>
+                <div class="row">
+                    <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">.col-xs-2 .col-sm-4 .col-md-6 .col-lg-8</div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-8 col-sm-offset-6 col-md-offset-4 col-lg-offset-2">.col-xs-10 .col-sm-8 .col-md-6 .col-lg-4 .col-xs-offset-8 .col-sm-offset-6 .col-md-offset-4 .col-lg-offset-2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

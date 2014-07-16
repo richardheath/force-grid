@@ -1,0 +1,87 @@
+//
+// Force Grid system
+// --------------------------------------------------
+
+// Mixins
+//
+.force-float-grid-columns(@index, @class, @type) when (@type = full) and (@index > 0) {
+  .col-@{class}-@{index} {
+    float: none;
+    width: auto;
+  }
+}
+.force-float-grid-columns(@index, @class, @type) when (@type = float) and  (@index > 0) {
+  .col-@{class}-@{index} {
+    float: left;
+  }
+}
+
+// Basic looping in LESS
+.force-loop-float-grid-columns(@index, @class, @type) when (@index >= 0) {
+  .force-float-grid-columns(@index, @class, @type);
+  // next iteration
+  .force-loop-float-grid-columns((@index - 1), @class, @type);
+}
+
+// Create grid for specific class
+.force-make-grid(@class) {
+  .loop-grid-columns(@grid-columns, @class, width);
+  .loop-grid-columns(@grid-columns, @class, pull);
+  .loop-grid-columns(@grid-columns, @class, push);
+  .loop-grid-columns(@grid-columns, @class, offset);
+}
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+.view-xs {
+    .force-loop-float-grid-columns(@grid-columns, sm, full);
+    .force-loop-float-grid-columns(@grid-columns, md, full);
+    .force-loop-float-grid-columns(@grid-columns, lg, full);
+    .force-loop-float-grid-columns(@grid-columns, xs, float);
+    .force-make-grid(xs);
+}
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+.view-sm {
+  .force-loop-float-grid-columns(@grid-columns, xs, float);
+  .force-loop-float-grid-columns(@grid-columns, md, full);
+  .force-loop-float-grid-columns(@grid-columns, lg, full);
+  .force-loop-float-grid-columns(@grid-columns, sm, float);
+  .force-make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+.view-md {
+  .force-loop-float-grid-columns(@grid-columns, xs, float);
+  .force-loop-float-grid-columns(@grid-columns, sm, float);
+  .force-loop-float-grid-columns(@grid-columns, lg, full);
+  .force-loop-float-grid-columns(@grid-columns, md, float);
+  .force-make-grid(sm);
+  .force-make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+.view-lg {
+  .force-loop-float-grid-columns(@grid-columns, xs, float);
+  .force-loop-float-grid-columns(@grid-columns, sm, float);
+  .force-loop-float-grid-columns(@grid-columns, md, float);
+  .force-loop-float-grid-columns(@grid-columns, lg, float);
+  .force-make-grid(sm);
+  .force-make-grid(md);
+  .force-make-grid(lg);
+}
