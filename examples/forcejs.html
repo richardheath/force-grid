@@ -14,14 +14,21 @@
     <div class="container-fluid">
         <div class="page-header">
             <h1>Force Grid JS Example</h1>
-            <p class="lead">Add-in for Bootstrap grid system. It allows the use of class to force a view port by element.</p>
+            <p class="lead">Demo on how force-grid can control the main and side contents view port to fit their content based on width. Try resizing the browser to see the changes.</p>
         </div>
         <div class="row">
             <div class="col-md-8">
                 <h2>Main Content</h2>
                 <div id="mainContent">
                     <div class="row">
-                        <div class=""></div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="alert alert-success" role="alert">I split in half on medium screens.</div>
+                            <div class="alert alert-success" role="alert">I use the full width on smaller screens.</div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="alert alert-success" role="alert">Resize the browser.</div>
+                            <div class="alert alert-success" role="alert">To see the changes.</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -29,8 +36,14 @@
                 <h2>Side Content</h2>
                 <div id="sideContent">
                     <div class="row">
-                        <div class="col-sm-4">I am stacked when I am small.</div>
-                        <div class="col-sm-8">I am single line if I am big enough.</div>
+                        <div class="col-sm-6">
+                            <div class="alert alert-info" role="alert">I am extra small when on the side.</div>
+                            <div class="alert alert-info" role="alert">I am small on really large screens.</div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="alert alert-info" role="alert">I maximize the space when at the bottom.</div>
+                            <div class="alert alert-info" role="alert">Back to extra small on mobile devices.</div>
+                        </div>
                     </div>
                 </div>
             </div>
