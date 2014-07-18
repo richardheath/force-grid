@@ -6,18 +6,16 @@ to control the view port by an elements width instead of using CSS3 media querie
 
 ## Quick Start
 
-If you just want to try it then just download bootstrap-force-grid.css under CSS
+If you just want to try it then download bootstrap-force-grid.css under CSS
 folder. This is compiled using Bootstrap default theme and configuration.
 
 ## Getting Started
 
 To compile force-grid with Bootstrap
 
-- Copy force-grid.less to Bootstrap/less folder
 - Add force-grid in your bootstrap.less
 - Compile bootstrap.less
 
-Add this on bootstrap.less
 ```
 // Force Grid
 @import "force-grid.less";
@@ -34,11 +32,11 @@ Add these class to force child elements to use specified view port.
 
 ## Force.js
 
-This tool auto updates container elements view port depending on its width. It is
-like media query by element. Force.js requires jQuery and will listen to 
-window.resize event to refresh watched elements view port.
+This tool auto updates container elements view port depending on its width. 
+Force.js requires jQuery and will listen to window.resize event to refresh 
+watched elements view port.
 
-The default view ports are the same as Bootstrap media queries width.
+The default view ports are the same as Bootstrap media queries.
 
 ## Force.js API
 
@@ -61,7 +59,7 @@ or jQuery element.
 
 ### force.unwatch(elem)
 
-Remove an element on the watch list.
+Remove an element on the watch list. If elem is undefined then it will clear watch list.
 
 ### force.process()
 
